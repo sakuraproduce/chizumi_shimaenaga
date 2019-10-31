@@ -1,0 +1,68 @@
+.service {
+	@include mq("tab") {
+		padding: 0 $pd-tab;
+	}
+	@include mq("sp") {
+		padding: 0 $pd-sp;
+	}
+
+	&-heading{
+		@include font-size(3.6rem, 2.8rem);
+		font-weight: bold;
+		padding: 70px 0 67px;
+		text-align: center;
+		position: relative;
+		@include underline;
+	}
+
+	&-inner {
+		width: 880px;
+		max-width: 100%;
+		display: flex;
+		justify-content: space-between;
+		margin: 0 auto;
+
+		@include mq("sp") {
+			flex-direction: column;
+		}
+	}
+
+	&-wrap {
+		width: 29.5%;
+
+		@include mq("sp") {
+			width: 100%;
+		}
+	}
+
+	&-img {
+		margin-bottom: 20px;
+		text-align: center;
+
+		@include mq("sp") {
+			margin-bottom: 15px;
+			max-width: 31%;
+			margin: 0 auto;
+		}
+	}
+
+	&-title {
+		@include font-size(3.2rem, 2.6rem);
+		margin-bottom: 32px;
+		text-align: center;
+
+		@include mq("sp") {
+			margin-bottom: 10px;
+		}
+	}
+
+	&-text {
+		@include font-size(2rem, 1.8rem);
+		margin-bottom: 80px;
+		text-align: center;
+
+		@include mq("sp") {
+			margin-bottom: 50px;
+		}
+	}
+}

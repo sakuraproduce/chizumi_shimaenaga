@@ -1,0 +1,19 @@
+.footer {
+	background: #D5D5D5;
+	height: 49.6px;
+	padding: 17px;
+
+
+	&-copyright {
+		text-align: center;
+		font-size: 1.2rem;
+		color: $cr-txt-w;
+
+
+		@include mq("sp") {
+			text-align: center;
+		}
+	}
+
+
+}
